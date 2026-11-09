@@ -1,0 +1,36 @@
+- generic [active] [ref=f22e1]:
+  - generic "YouTube Video Player" [ref=f22e5]:
+    - button "Play" [ref=f22e9] [cursor=pointer]
+    - generic [ref=f22e10]:
+      - generic [ref=f22e11] [cursor=pointer]:
+        - slider "Seek slider" [ref=f22e12]
+        - generic:
+          - generic:
+            - generic:
+              - slider "Click or scroll the panel for the precise seeking."
+      - generic [ref=f22e20]:
+        - generic [ref=f22e21]:
+          - button "Play (k)" [ref=f22e22] [cursor=pointer]
+          - generic [ref=f22e23]:
+            - button "Mute (m)" [ref=f22e25] [cursor=pointer]
+            - slider "Volume":
+              - generic [ref=f22e26] [cursor=pointer]
+          - button "0 Minutes 0 Seconds of 7 Minutes 13 Seconds" [ref=f22e29] [cursor=pointer]: 0:00 / 7:13
+        - generic [ref=f22e30]:
+          - generic [ref=f22e31]:
+            - button "Subtitles/closed captions unavailable" [ref=f22e32] [cursor=pointer]
+            - button "Settings" [ref=f22e34] [cursor=pointer]
+          - generic [ref=f22e35]:
+            - button "Theater mode (t)" [ref=f22e36] [cursor=pointer]
+            - button "Full screen (f)" [ref=f22e37] [cursor=pointer]
+  - banner [ref=f22e61]:
+    - generic [ref=f22e63]:
+      - generic [ref=f22e64]:
+        - button "Guide" [ref=f22e66] [cursor=pointer]
+        - generic [ref=f22e68]:
+          - link:
+            - /url: /
+      - search [ref=f22e70]:
+        - generic [ref=f22e72]:
+          - combobox [expanded] [ref=f22e75]
+          - button "Search" [ref=f22e76] [cursor=pointer]

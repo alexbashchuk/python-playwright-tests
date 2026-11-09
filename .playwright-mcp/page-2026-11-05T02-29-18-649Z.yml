@@ -1,0 +1,72 @@
+- main [ref=f2e206]:
+  - button "⌂ Home" [ref=f2e207] [cursor=pointer]
+  - region "Java Playwright Project" [ref=f2e208]:
+    - heading "Java + Playwright Automation Project" [level=1] [ref=f2e209]
+    - paragraph [ref=f2e210]: Portfolio UI validation • Modal certificate checks • Allure reporting
+  - region "Project Description" [ref=f2e211]:
+    - heading "Project Description" [level=2] [ref=f2e212]
+    - paragraph [ref=f2e213]: "This project tests my portfolio site content: buttons functionality validation and modal pop-ups content (captured by Playwright certificates pictures) validation against originals. After the test all information processed with the project included Allure reporting framework to present it in the HTML easily readable view."
+  - region "Demo Links" [ref=f2e214]:
+    - heading "Demo Links" [level=2] [ref=f2e215]
+    - list [ref=f2e216]:
+      - listitem [ref=f2e217]:
+        - text: "Test execution demo:"
+        - link "YouTube video" [ref=f2e218] [cursor=pointer]:
+          - /url: https://youtu.be/7d74GlFB3Lg
+      - listitem [ref=f2e219]:
+        - text: "Source code:"
+        - link "GitHub repository" [ref=f2e220] [cursor=pointer]:
+          - /url: https://github.com/alexbashchuk/playwright-java-demo
+  - region "Tech Stack" [ref=f2e221]:
+    - heading "Tech Stack" [level=2] [ref=f2e222]
+    - generic "Tech stack chips" [ref=f2e223]:
+      - generic [ref=f2e224]: Java 17
+      - generic [ref=f2e225]: Playwright for Java
+      - generic [ref=f2e226]: JUnit 5
+      - generic [ref=f2e227]: Maven
+      - generic [ref=f2e228]: Allure Reporting
+      - generic [ref=f2e229]: Git Bash (GitHub updates)
+      - generic [ref=f2e230]: Shell Script (run Maven + keep Allure history)
+      - generic [ref=f2e231]: OpenCV (Bytedeco) for image matching
+  - region "Project Structure" [ref=f2e232]:
+    - heading "Project Structure" [level=2] [ref=f2e233]
+    - generic [ref=f2e234]: playwright-java-demo └─ src/test/java ├─ io.github.alexbashchuk.base │ ├─ AllureConsoleLogsExtension.java │ ├─ AllurePlaywrightFailureExtension.java │ ├─ BaseUiTest.java │ └─ ImageToTemplateMatcher.java ├─ io.github.alexbashchuk.pages │ └─ LandingPage.java └─ io.github.alexbashchuk.tests └─ ButtonsFunctionalityCheckTests.java
+  - region "Java Packages and Classes" [ref=f2e235]:
+    - heading "Java Packages and Classes" [level=2] [ref=f2e236]
+    - generic [ref=f2e237]:
+      - heading "io.github.alexbashchuk.base" [level=3] [ref=f2e238]
+      - list [ref=f2e239]:
+        - listitem [ref=f2e240]:
+          - strong [ref=f2e241]: BaseUiTest.java
+          - text: — Abstract base test. Creates Playwright + Chromium (Chrome channel), opens a browser with full-screen sizing, creates a fresh context/page, and navigates to the portfolio URL in @BeforeAll. Closes everything in @AfterAll.
+        - listitem [ref=f2e242]:
+          - strong [ref=f2e243]: AllurePlaywrightFailureExtension.java
+          - text: "— JUnit 5 extension: on test failure it captures a full-page screenshot, saves it to target/screenshots, and attaches screenshot + URL + HTML to the Allure report."
+        - listitem [ref=f2e244]:
+          - strong [ref=f2e245]: ImageToTemplateMatcher.java
+          - text: — Image validation utility using OpenCV template matching (TM_CCOEFF_NORMED). Compares captured modal screenshots vs template originals using a threshold percent (e.g., 80%).
+        - listitem [ref=f2e246]:
+          - strong [ref=f2e247]: AllureConsoleLogsExtension.java (optional)
+          - text: — Optional extension (referenced in tests as commented @ExtendWith) intended to redirect logging into the Allure report.
+    - generic [ref=f2e248]:
+      - heading "io.github.alexbashchuk.pages" [level=3] [ref=f2e249]
+      - list [ref=f2e250]:
+        - listitem [ref=f2e251]:
+          - strong [ref=f2e252]: LandingPage.java
+          - text: "— Page Object Model for the portfolio Home page: selects an Experience block by aria-label, clicks 'Choose work description', validates Short Details/Long Story and the X close control, and opens certificate modals to screenshot the modal element for later image matching."
+    - generic [ref=f2e253]:
+      - heading "io.github.alexbashchuk.tests" [level=3] [ref=f2e254]
+      - list [ref=f2e255]:
+        - listitem [ref=f2e256]:
+          - strong [ref=f2e257]: ButtonsFunctionalityCheckTests.java
+          - text: "— Test class extending BaseUiTest. Includes: (1) API request check for site status, (2) basic page title check, (3) parameterized UI validations for experience blocks, (4) parameterized certificate modal capture + image matching vs templates."
+  - region "Notes" [ref=f2e258]:
+    - heading "Notes" [level=2] [ref=f2e259]
+    - list [ref=f2e260]:
+      - listitem [ref=f2e261]:
+        - text: Failure screenshots are saved to
+        - code [ref=f2e262]: target/screenshots
+        - text: and also attached to the Allure report automatically (JUnit 5 extension).
+      - listitem [ref=f2e263]: Certificate validation is done by capturing the certificate modal screenshot and comparing it to an original template image using OpenCV template matching.
+      - listitem [ref=f2e264]: In the current test implementation, template/capture paths are local absolute paths.
+  - generic [ref=f2e265]: © 2026 Alex Bachuk

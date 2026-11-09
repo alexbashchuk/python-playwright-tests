@@ -1,0 +1,121 @@
+- main [ref=e228]:
+  - button "⌂ Home" [ref=e229] [cursor=pointer]
+  - region "Portfolio GitHub Repository" [ref=e230]:
+    - heading "GitHub Portfolio Website" [level=1] [ref=e231]
+    - paragraph [ref=e232]: Personal QA automation portfolio • React + Vite site • GitHub-hosted source code
+  - region "Project Description" [ref=e233]:
+    - heading "Project Description" [level=2] [ref=e234]
+    - paragraph [ref=e235]:
+      - text: This repository contains the source code for my personal portfolio website, built to present my background as a
+      - strong [ref=e236]: QA Automation Engineer / SDET
+      - text: ", along with examples of my automation frameworks, demo projects, and technical skills. The portfolio is designed as a practical showcase of my hands-on experience with web, mobile, API, and CI-oriented automation solutions."
+    - paragraph [ref=e237]:
+      - text: The site is implemented with
+      - strong [ref=e238]: React
+      - text: and
+      - strong [ref=e239]: Vite
+      - text: ", and organized as a multi-page portfolio where each project can have its own detailed page. The goal of this repository is not only to host my portfolio publicly, but also to serve as a clean, maintainable codebase that demonstrates front-end structure, reusable styling, and project-focused technical documentation."
+  - region "Demo Links" [ref=e240]:
+    - heading "Demo Links" [level=2] [ref=e241]
+    - list [ref=e242]:
+      - listitem [ref=e243]:
+        - text: "Source code:"
+        - link "GitHub repository" [ref=e244] [cursor=pointer]:
+          - /url: https://github.com/alexbashchuk/alexbashchuk.github.io
+      - listitem [ref=e245]:
+        - text: "Live website:"
+        - link "GitHub Pages site" [ref=e246] [cursor=pointer]:
+          - /url: https://alexbashchuk.github.io
+  - region "Tech Stack" [ref=e247]:
+    - heading "Tech Stack" [level=2] [ref=e248]
+    - generic "Tech stack chips" [ref=e249]:
+      - generic [ref=e250]: React
+      - generic [ref=e251]: Vite
+      - generic [ref=e252]: JavaScript
+      - generic [ref=e253]: CSS
+      - generic [ref=e254]: HTML
+      - generic [ref=e255]: GitHub Pages
+      - generic [ref=e256]: GitHub Actions / Workflows
+      - generic [ref=e257]: Responsive portfolio UI
+      - generic [ref=e258]: Multi-page project showcase
+  - region "Repository Structure" [ref=e259]:
+    - heading "Repository Structure" [level=2] [ref=e260]
+    - generic [ref=e261]: alexbashchuk.github.io ├─ .github/ │ └─ workflows/ ├─ public/ ├─ src/ ├─ index.html ├─ package.json ├─ package-lock.json ├─ vite.config.js ├─ eslint.config.js └─ README.md
+  - region "Repository Components" [ref=e262]:
+    - heading "Repository Components" [level=2] [ref=e263]
+    - generic [ref=e264]:
+      - heading "Website Core" [level=3] [ref=e265]
+      - list [ref=e266]:
+        - listitem [ref=e267]:
+          - strong [ref=e268]: Home page
+          - text: — Main landing page that introduces me as a QA Automation Engineer and provides navigation to my portfolio sections.
+        - listitem [ref=e269]:
+          - strong [ref=e270]: Project pages
+          - text: — Dedicated pages for individual automation projects with descriptions, tech stack, structure, and demo links.
+        - listitem [ref=e271]:
+          - strong [ref=e272]: Reusable styling
+          - text: — Shared Home.css styling keeps the portfolio pages visually consistent across the site.
+    - generic [ref=e273]:
+      - heading "Repository Structure" [level=3] [ref=e274]
+      - list [ref=e275]:
+        - listitem [ref=e276]:
+          - strong [ref=e277]: src
+          - text: — Contains the React source code, page components, routing logic, and UI content for the portfolio website.
+        - listitem [ref=e278]:
+          - strong [ref=e279]: public
+          - text: — Stores public static assets that can be served directly by the site.
+        - listitem [ref=e280]:
+          - strong [ref=e281]: .github/workflows
+          - text: — Contains GitHub workflow definitions used for repository automation and deployment-related processes.
+    - generic [ref=e282]:
+      - heading "Portfolio Content" [level=3] [ref=e283]
+      - list [ref=e284]:
+        - listitem [ref=e285]:
+          - strong [ref=e286]: Professional summary
+          - text: — Highlights my background, QA automation experience, and the tools and frameworks I use.
+        - listitem [ref=e287]:
+          - strong [ref=e288]: Automation project showcase
+          - text: — Presents practical QA and SDET projects with GitHub source code and demo details.
+        - listitem [ref=e289]:
+          - strong [ref=e290]: Technology-focused pages
+          - text: — Shows specific examples of work with tools such as Playwright, Appium, JMeter, Jenkins, and related frameworks.
+  - region "Website Purpose" [ref=e291]:
+    - heading "Website Purpose" [level=2] [ref=e292]
+    - list [ref=e293]:
+      - listitem [ref=e294]: Present my professional QA automation and SDET experience in one place.
+      - listitem [ref=e295]: Showcase real and demo automation projects with clear technical descriptions.
+      - listitem [ref=e296]: Provide GitHub-ready visibility for my frameworks, tools, and coding style.
+      - listitem [ref=e297]: Support job applications with a public portfolio that is easy to review.
+      - listitem [ref=e298]: Demonstrate how I organize and document technical work in a maintainable format.
+  - region "Highlights" [ref=e299]:
+    - heading "Highlights" [level=2] [ref=e300]
+    - list [ref=e301]:
+      - listitem [ref=e302]:
+        - text: Built as a
+        - strong [ref=e303]: React + Vite
+        - text: application for a fast and modern front-end structure.
+      - listitem [ref=e304]:
+        - text: Uses a
+        - strong [ref=e305]: multi-page layout
+        - text: so each automation project can have its own focused presentation.
+      - listitem [ref=e306]:
+        - text: Designed to support
+        - strong [ref=e307]: portfolio growth
+        - text: as new projects, demos, and links are added over time.
+      - listitem [ref=e308]: Keeps the code and presentation aligned so the site works both as a portfolio and as a code sample.
+  - region "Notes" [ref=e309]:
+    - heading "Notes" [level=2] [ref=e310]
+    - list [ref=e311]:
+      - listitem [ref=e312]:
+        - text: This repository serves as the
+        - strong [ref=e313]: central portfolio hub
+        - text: for my automation-related work.
+      - listitem [ref=e314]:
+        - text: The structure is suitable for adding more
+        - strong [ref=e315]: project detail pages
+        - text: as the portfolio expands.
+      - listitem [ref=e316]:
+        - text: The site is intended to combine
+        - strong [ref=e317]: technical presentation
+        - text: with a clean and simple user experience.
+  - generic [ref=e318]: © 2026 Alex Bachuk

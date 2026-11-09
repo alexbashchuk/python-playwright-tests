@@ -1,0 +1,114 @@
+- main [ref=e526]:
+  - button "⌂ Home" [ref=e527] [cursor=pointer]
+  - region "JMeter and Jenkins Project" [ref=e528]:
+    - heading "JMeter + Jenkins API Automation Project" [level=1] [ref=e529]
+    - paragraph [ref=e530]: GitHub-triggered portfolio monitoring • Local Jenkins execution • JMeter API validation
+  - region "Project Description" [ref=e531]:
+    - heading "Project Description" [level=2] [ref=e532]
+    - paragraph [ref=e533]:
+      - text: This project demonstrates a local CI-style automation workflow built with
+      - strong [ref=e534]: JMeter
+      - text: and
+      - strong [ref=e535]: Jenkins
+      - text: . I created a JMeter test plan that sends several API requests to my portfolio site and to JSONPlaceholder, then published the test plan into a dedicated GitHub repository. Jenkins monitors my portfolio GitHub repository for changes and automatically starts the JMeter execution flow after each new successful trigger build.
+    - paragraph [ref=e536]:
+      - text: The automation downloads the latest JMeter test file from GitHub, runs the test locally, creates
+      - strong [ref=e537]: CSV
+      - text: and
+      - strong [ref=e538]: HTML
+      - text: reports, and then sends an e-mail notification with the execution results. This project is designed as a practical demo of lightweight API monitoring and continuous validation for portfolio updates.
+  - region "Demo Links" [ref=e539]:
+    - heading "Demo Links" [level=2] [ref=e540]
+    - list [ref=e541]:
+      - listitem [ref=e542]:
+        - text: "Test execution demo:"
+        - link "YouTube video" [ref=e543] [cursor=pointer]:
+          - /url: https://youtu.be/VEgMSr7PkVs
+      - listitem [ref=e544]:
+        - text: "JMeter source code:"
+        - link "GitHub repository" [ref=e545] [cursor=pointer]:
+          - /url: https://github.com/alexbashchuk/JMeter-Test
+      - listitem [ref=e546]:
+        - text: "Portfolio source code:"
+        - link "GitHub repository" [ref=e547] [cursor=pointer]:
+          - /url: https://github.com/alexbashchuk/alexbashchuk.github.io
+  - region "Tech Stack" [ref=e548]:
+    - heading "Tech Stack" [level=2] [ref=e549]
+    - generic "Tech stack chips" [ref=e550]:
+      - generic [ref=e551]: Apache JMeter
+      - generic [ref=e552]: Jenkins
+      - generic [ref=e553]: Groovy Pipeline
+      - generic [ref=e554]: GitHub
+      - generic [ref=e555]: CSV test result reports
+      - generic [ref=e556]: HTML dashboard reports
+      - generic [ref=e557]: SMTP e-mail notifications
+      - generic [ref=e558]: REST API testing (GET / POST)
+      - generic [ref=e559]: Windows local CI execution
+  - region "Project Structure" [ref=e560]:
+    - heading "Project Structure" [level=2] [ref=e561]
+    - generic [ref=e562]: JMeter + Jenkins Project ├─ GitHub Repositories │ ├─ alexbashchuk.github.io │ └─ JMeter-Test ├─ Jenkins Projects │ ├─ Jenkins-Portfolio-Trigger │ └─ JMeter-Portfolio-Master ├─ JMeter Test Plan │ └─ Page "Response Test.jmx" ├─ Test Execution Output │ ├─ results.csv │ └─ HTML report dashboard └─ Notifications └─ e-mail test report
+  - region "Project Components" [ref=e563]:
+    - heading "Project Components" [level=2] [ref=e564]
+    - generic [ref=e565]:
+      - heading "JMeter Test Assets" [level=3] [ref=e566]
+      - list [ref=e567]:
+        - listitem [ref=e568]:
+          - strong [ref=e569]: Page "Response Test.jmx"
+          - text: — Main JMeter test plan that sends several GET and POST API requests to the portfolio site and JSONPlaceholder endpoints.
+        - listitem [ref=e570]:
+          - strong [ref=e571]: Portfolio endpoint checks
+          - text: — Validates availability and response behavior of selected portfolio pages after GitHub updates are detected.
+        - listitem [ref=e572]:
+          - strong [ref=e573]: JSONPlaceholder requests
+          - text: — Supplemental API calls used to demonstrate GET and POST request coverage within the same JMeter suite.
+    - generic [ref=e574]:
+      - heading "Jenkins Projects" [level=3] [ref=e575]
+      - list [ref=e576]:
+        - listitem [ref=e577]:
+          - strong [ref=e578]: Jenkins-Portfolio-Trigger
+          - text: — Polling Jenkins job that listens for changes in the portfolio GitHub repository and starts an empty successful build whenever updates are detected.
+        - listitem [ref=e579]:
+          - strong [ref=e580]: JMeter-Portfolio-Master
+          - text: — Master Jenkins job that watches Jenkins-Portfolio-Trigger and starts the JMeter execution workflow after each successful trigger build.
+    - generic [ref=e581]:
+      - heading "Execution and Reporting Flow" [level=3] [ref=e582]
+      - list [ref=e583]:
+        - listitem [ref=e584]:
+          - strong [ref=e585]: Download latest JMeter test plan
+          - text: — The Jenkins master job pulls the latest version of the JMeter test file from the JMeter-Test GitHub repository before execution.
+        - listitem [ref=e586]:
+          - strong [ref=e587]: Run JMeter locally
+          - text: — Jenkins launches the local JMeter installation in non-GUI mode and executes the API test plan against the configured targets.
+        - listitem [ref=e588]:
+          - strong [ref=e589]: Generate CSV results
+          - text: — Execution results are saved into a CSV file for raw result tracking and troubleshooting.
+        - listitem [ref=e590]:
+          - strong [ref=e591]: Generate HTML report
+          - text: — JMeter dashboard report output is generated as an HTML report for cleaner presentation of execution metrics and response summaries.
+        - listitem [ref=e592]:
+          - strong [ref=e593]: Send e-mail notification
+          - text: — After the run completes, Jenkins sends an e-mail notification with the test results to bostchuk@gmail.com.
+  - region "Automation Flow" [ref=e594]:
+    - heading "Automation Flow" [level=2] [ref=e595]
+    - list [ref=e596]:
+      - listitem [ref=e597]: Jenkins-Portfolio-Trigger polls the portfolio GitHub repository for updates.
+      - listitem [ref=e598]: When a portfolio change is detected, the trigger job performs a successful build.
+      - listitem [ref=e599]: JMeter-Portfolio-Master watches the trigger project and starts after its success.
+      - listitem [ref=e600]: The master job downloads the latest JMeter test plan from GitHub.
+      - listitem [ref=e601]: Jenkins runs JMeter locally in non-GUI mode against the configured endpoints.
+      - listitem [ref=e602]: CSV and HTML reports are generated for result review.
+      - listitem [ref=e603]: An e-mail notification with the execution results is sent after completion.
+  - region "Notes" [ref=e604]:
+    - heading "Notes" [level=2] [ref=e605]
+    - list [ref=e606]:
+      - listitem [ref=e607]:
+        - text: The project uses
+        - strong [ref=e608]: two Jenkins jobs
+        - text: to separate GitHub change detection from test execution logic.
+      - listitem [ref=e609]:
+        - text: The JMeter suite covers both
+        - strong [ref=e610]: portfolio endpoint validation
+        - text: and a public demo API for GET/POST request examples.
+      - listitem [ref=e611]: HTML reporting makes the results easier to present during demos, while CSV output keeps the raw execution data available.
+      - listitem [ref=e612]: The workflow is designed as a practical demonstration of continuous portfolio health checking with local tools.
+  - generic [ref=e613]: © 2026 Alex Bachuk

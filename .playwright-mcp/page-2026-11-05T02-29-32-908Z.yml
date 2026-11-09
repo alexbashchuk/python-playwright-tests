@@ -1,0 +1,148 @@
+- main [ref=f2e509]:
+  - button "⌂ Home" [ref=f2e510] [cursor=pointer]
+  - region "Cypress TypeScript CI/CD Project" [ref=f2e511]:
+    - heading "Cypress + TypeScript + Allure + GitHub Actions CI/CD Project" [level=1] [ref=f2e512]
+    - paragraph [ref=f2e513]: UI automation • Page Object Model • Local Allure reporting • GitHub Actions execution
+  - region "Project Description" [ref=f2e514]:
+    - heading "Project Description" [level=2] [ref=f2e515]
+    - paragraph [ref=f2e516]:
+      - text: This project demonstrates an end-to-end automation framework built with
+      - strong [ref=f2e517]: Cypress and TypeScript
+      - text: for testing my GitHub-hosted portfolio website. The framework uses a
+      - strong [ref=f2e518]: Page Object Model
+      - text: approach for reusable locators and cleaner test maintenance, supports
+      - strong [ref=f2e519]: local browser execution
+      - text: ", and produces both"
+      - strong [ref=f2e520]: Allure HTML reports
+      - text: for local analysis and
+      - strong [ref=f2e521]: JUnit XML results
+      - text: for CI visibility.
+    - paragraph [ref=f2e522]:
+      - text: In addition to local execution, this demo also shows a
+      - strong [ref=f2e523]: GitHub Actions CI/CD integration
+      - text: where my portfolio repository deployment flow is connected to automated Cypress execution. This creates a realistic example of how UI tests can be used as a lightweight post-deployment quality gate for a live web project.
+  - region "Demo Links" [ref=f2e524]:
+    - heading "Demo Links" [level=2] [ref=f2e525]
+    - list [ref=f2e526]:
+      - listitem [ref=f2e527]:
+        - text: "Source code:"
+        - link "TypeScript-Cypress-CICD repository" [ref=f2e528] [cursor=pointer]:
+          - /url: https://github.com/alexbashchuk/TypeScript-Cypress-CICD
+      - listitem [ref=f2e529]:
+        - text: "Portfolio deployment repository:"
+        - link "alexbashchuk.github.io" [ref=f2e530] [cursor=pointer]:
+          - /url: https://github.com/alexbashchuk/alexbashchuk.github.io
+      - listitem [ref=f2e531]:
+        - text: "Local Cypress execution with Allure report:"
+        - link "YouTube video" [ref=f2e532] [cursor=pointer]:
+          - /url: https://youtu.be/ePLVuEhLe9U
+      - listitem [ref=f2e533]:
+        - text: "GitHub Actions execution with JUnit report:"
+        - link "YouTube video" [ref=f2e534] [cursor=pointer]:
+          - /url: https://youtu.be/LgTh6r9JWVY
+  - region "Tech Stack" [ref=f2e535]:
+    - heading "Tech Stack" [level=2] [ref=f2e536]
+    - generic "Tech stack chips" [ref=f2e537]:
+      - generic [ref=f2e538]: Cypress
+      - generic [ref=f2e539]: TypeScript
+      - generic [ref=f2e540]: JavaScript config
+      - generic [ref=f2e541]: Page Object Model
+      - generic [ref=f2e542]: Allure Reporting
+      - generic [ref=f2e543]: JUnit XML Reporting
+      - generic [ref=f2e544]: GitHub Actions
+      - generic [ref=f2e545]: GitHub Pages trigger flow
+      - generic [ref=f2e546]: Chrome / Edge / Firefox / Electron execution
+      - generic [ref=f2e547]: PowerShell local run helpers
+  - region "Project Structure" [ref=f2e548]:
+    - heading "Project Structure" [level=2] [ref=f2e549]
+    - generic [ref=f2e550]: "TypeScript-Cypress-CICD ├─ cypress │ ├─ e2e │ │ ├─ portfolio-home.cy.ts │ │ └─ portfolio-certifications.cy.ts │ ├─ fixtures │ ├─ pages │ │ └─ HomePage.ts │ ├─ support │ │ ├─ commands.ts │ │ └─ e2e.ts │ └─ tsconfig.json ├─ results ├─ cypress.config.js ├─ package.json ├─ package-lock.json └─ .gitignore External CI/CD integration: alexbashchuk.github.io └─ .github/workflows/deploy.yml"
+  - region "Project Files and Purpose" [ref=f2e551]:
+    - heading "Project Files and Purpose" [level=2] [ref=f2e552]
+    - generic [ref=f2e553]:
+      - heading "Project Core" [level=3] [ref=f2e554]
+      - list [ref=f2e555]:
+        - listitem [ref=f2e556]:
+          - strong [ref=f2e557]: cypress.config.js
+          - text: — Main Cypress configuration file. Sets browser viewport size, baseUrl for the portfolio site, JUnit reporting, and Allure reporter integration.
+        - listitem [ref=f2e558]:
+          - strong [ref=f2e559]: package.json
+          - text: — Defines Cypress and Allure commands for opening the runner, running tests, and generating or opening Allure reports.
+        - listitem [ref=f2e560]:
+          - strong [ref=f2e561]: cypress/tsconfig.json
+          - text: — TypeScript configuration for Cypress test code and support files.
+    - generic [ref=f2e562]:
+      - heading "Test Layer" [level=3] [ref=f2e563]
+      - list [ref=f2e564]:
+        - listitem [ref=f2e565]:
+          - strong [ref=f2e566]: cypress/e2e/portfolio-home.cy.ts
+          - text: — Main end-to-end test spec for validating portfolio home page behavior, navigation, and experience-card interactions.
+        - listitem [ref=f2e567]:
+          - strong [ref=f2e568]: cypress/e2e/portfolio-certifications.cy.ts
+          - text: — End-to-end test spec focused on certifications-related flows and validation of certification UI behavior.
+        - listitem [ref=f2e569]:
+          - strong [ref=f2e570]: cypress/pages/HomePage.ts
+          - text: — Reusable page object that centralizes locators and helper actions for the portfolio home page.
+    - generic [ref=f2e571]:
+      - heading "Support Layer" [level=3] [ref=f2e572]
+      - list [ref=f2e573]:
+        - listitem [ref=f2e574]:
+          - strong [ref=f2e575]: cypress/support/commands.ts
+          - text: — Project support file for reusable Cypress custom commands and shared test helpers.
+        - listitem [ref=f2e576]:
+          - strong [ref=f2e577]: cypress/support/e2e.ts
+          - text: — Global Cypress support entry point loaded before test execution.
+        - listitem [ref=f2e578]:
+          - strong [ref=f2e579]: cypress/fixtures
+          - text: — Reserved place for test data and fixture files used by specs when needed.
+    - generic [ref=f2e580]:
+      - heading "Reporting and CI/CD" [level=3] [ref=f2e581]
+      - list [ref=f2e582]:
+        - listitem [ref=f2e583]:
+          - strong [ref=f2e584]: results/
+          - text: — Directory used for JUnit XML output generated during automated execution, including GitHub Actions runs.
+        - listitem [ref=f2e585]:
+          - strong [ref=f2e586]: allure-results / allure-reports
+          - text: — Runtime reporting folders used for local Allure result generation and HTML report publishing.
+        - listitem [ref=f2e587]:
+          - strong [ref=f2e588]: Portfolio repo GitHub Actions workflow
+          - text: — External GitHub Actions flow in the portfolio repository that deploys the site and can be used to trigger Cypress CI execution after successful portfolio deployment.
+  - region "Local Execution Flow" [ref=f2e589]:
+    - heading "Local Execution Flow" [level=2] [ref=f2e590]
+    - list [ref=f2e591]:
+      - listitem [ref=f2e592]: Portfolio site is opened through the configured Cypress baseUrl.
+      - listitem [ref=f2e593]: Tests execute in the selected local browser such as Chrome, Edge, Firefox, or Electron.
+      - listitem [ref=f2e594]: Page object methods are used to locate experience-card controls and other portfolio elements.
+      - listitem [ref=f2e595]: Assertions validate page visibility, button functionality, menu actions, and certification behavior.
+      - listitem [ref=f2e596]: Allure result files are generated during execution and then converted into an HTML report for review.
+  - region "CI CD Flow" [ref=f2e597]:
+    - heading "CI/CD Flow" [level=2] [ref=f2e598]
+    - list [ref=f2e599]:
+      - listitem [ref=f2e600]: The portfolio repository is deployed to GitHub Pages through a GitHub Actions workflow.
+      - listitem [ref=f2e601]: After successful deployment, the automation flow can trigger the Cypress project execution.
+      - listitem [ref=f2e602]: The Cypress suite runs in GitHub Actions and publishes JUnit-style test results for CI visibility.
+      - listitem [ref=f2e603]: This setup demonstrates how UI automation can be connected to a real deployment pipeline.
+  - region "Key Project Highlights" [ref=f2e604]:
+    - heading "Key Project Highlights" [level=2] [ref=f2e605]
+    - list [ref=f2e606]:
+      - listitem [ref=f2e607]: Built with Cypress and TypeScript for maintainable web UI automation.
+      - listitem [ref=f2e608]: Uses page objects to keep selectors and test actions reusable.
+      - listitem [ref=f2e609]: Supports local execution with Allure report generation for clearer result analysis.
+      - listitem [ref=f2e610]: Supports CI execution with JUnit XML output for GitHub Actions visibility.
+      - listitem [ref=f2e611]: Demonstrates cross-repository automation flow tied to portfolio deployment.
+      - listitem [ref=f2e612]: Shows both local and CI execution in separate demo videos.
+  - region "Notes" [ref=f2e613]:
+    - heading "Notes" [level=2] [ref=f2e614]
+    - list [ref=f2e615]:
+      - listitem [ref=f2e616]:
+        - text: The project focuses on
+        - strong [ref=f2e617]: web UI automation
+        - text: of my portfolio application rather than component-level unit testing.
+      - listitem [ref=f2e618]:
+        - text: "Reporting is split by use case:"
+        - strong [ref=f2e619]: Allure
+        - text: for rich local HTML analysis and
+        - strong [ref=f2e620]: JUnit XML
+        - text: for CI-friendly results in GitHub Actions.
+      - listitem [ref=f2e621]: The CI/CD design is intentionally demo-friendly and shows how a personal portfolio project can be connected to automated post-deployment validation.
+      - listitem [ref=f2e622]: The structure is compact, but it still demonstrates important automation engineering concepts such as reusable page objects, reporting integration, browser execution control, and workflow-based CI triggering.
+  - generic [ref=f2e623]: © 2026 Alex Bachuk

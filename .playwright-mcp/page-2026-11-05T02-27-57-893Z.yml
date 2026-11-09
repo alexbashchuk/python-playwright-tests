@@ -1,0 +1,219 @@
+- main [ref=e320]:
+  - region "Profile" [ref=e321]:
+    - img "Alex Boschuk headshot" [ref=e322]
+    - heading "Alex Boschuk" [level=1] [ref=e323]
+    - paragraph [ref=e324]: Senior SDET / QA Automation Engineer
+    - generic "Contact" [ref=e325]:
+      - generic [ref=e326]: Boca Raton, FL
+      - generic [aria-hidden] [ref=e327]: •
+      - generic [ref=e328]: 347-495-4965
+      - generic [aria-hidden] [ref=e329]: •
+      - generic [ref=e330]: bostchuk@gmail.com
+    - paragraph [ref=e331]: US Citizen
+  - region "Professional Summary" [ref=e332]:
+    - heading "Professional Summary" [level=2] [ref=e333]
+    - paragraph [ref=e334]: Senior SDET / QA Automation Architect with 10+ years of experience delivering automation for web, API, mobile, desktop, and enterprise applications. Hands-on in Playwright, Selenium, Appium, Cypress, TypeScript, Python, Java, and C#, with recent work in Playwright migration and AI-assisted test generation. Builds maintainable test frameworks, integrates automated testing into Azure DevOps and Jenkins pipelines, and has reduced manual and regression effort by up to 70% while mentoring distributed QA teams
+  - region "Technical Skills" [ref=e335]:
+    - heading "Technical Skills" [level=2] [ref=e336]
+    - button "My QA Automation Demo Projects" [ref=e338] [cursor=pointer]
+    - generic [ref=e339]:
+      - generic [ref=e340]:
+        - heading "Automation Frameworks" [level=3] [ref=e341]
+        - generic [ref=e342]:
+          - generic [ref=e343]: Playwright
+          - generic [ref=e344]: Selenium
+          - generic [ref=e345]: Appium
+          - generic [ref=e346]: Cypress
+          - generic [ref=e347]: Tricentis Tosca
+          - generic [ref=e348]: WinAppDriver
+          - generic [ref=e349]: K6
+          - generic [ref=e350]: JMeter
+          - generic [ref=e351]: NeoLoad
+      - generic [ref=e352]:
+        - heading "Languages and test frameworks" [level=3] [ref=e353]
+        - generic [ref=e354]:
+          - generic [ref=e355]: TypeScript
+          - generic [ref=e356]: Python
+          - generic [ref=e357]: Java
+          - generic [ref=e358]: C#
+          - generic [ref=e359]: JavaScript
+          - generic [ref=e360]: TestNG
+          - generic [ref=e361]: JUnit
+          - generic [ref=e362]: NUnit
+          - generic [ref=e363]: Pytest
+          - generic [ref=e364]: BDD
+          - generic [ref=e365]: Cucumber
+          - generic [ref=e366]: Gherkin
+      - generic [ref=e367]:
+        - heading "AI-assisted testing" [level=3] [ref=e368]
+        - generic [ref=e369]:
+          - generic [ref=e370]: Cursor
+          - generic [ref=e371]: GitHub Copilot
+          - generic [ref=e372]: Azure Foundry Agents (Azure AI Foundry)
+          - generic [ref=e373]: Microsoft Agent Framework
+          - generic [ref=e374]: MCP servers
+          - generic [ref=e375]: LLM-based test generation
+      - generic [ref=e376]:
+        - heading "CI/CD and cloud" [level=3] [ref=e377]
+        - generic [ref=e378]:
+          - generic [ref=e379]: Azure DevOps
+          - generic [ref=e380]: Jenkins
+          - generic [ref=e381]: GitHub
+          - generic [ref=e382]: Docker
+          - generic [ref=e383]: Terraform
+          - generic [ref=e384]: Maven
+          - generic [ref=e385]: Git
+      - generic [ref=e386]:
+        - heading "API, data and observability" [level=3] [ref=e387]
+        - generic [ref=e388]:
+          - generic [ref=e389]: REST APIs
+          - generic [ref=e390]: Postman
+          - generic [ref=e391]: REST Assured
+          - generic [ref=e392]: SoapUI
+          - generic [ref=e393]: Swagger/OpenAPI
+          - generic [ref=e394]: SQL
+          - generic [ref=e395]: Oracle
+          - generic [ref=e396]: MongoDB
+          - generic [ref=e397]: NoSQL
+          - generic [ref=e398]: Splunk
+          - generic [ref=e399]: Charles Proxy
+          - generic [ref=e400]: Logcat
+      - generic [ref=e401]:
+        - heading "Leadership & Professional Skills" [level=3] [ref=e402]
+        - generic [ref=e403]:
+          - generic [ref=e404]: Team Leadership
+          - generic [ref=e405]: Staff Review
+          - generic [ref=e406]: Cross-Functional Collaboration
+          - generic [ref=e407]: Organization
+          - generic [ref=e408]: Prioritization
+          - generic [ref=e409]: Multi-Tasking
+          - generic [ref=e410]: Deadline Management
+  - region "Professional Experience" [ref=e411]:
+    - heading "Professional Experience" [level=2] [ref=e412]
+    - region "Experience at Williams Companies" [ref=e413]:
+      - generic [ref=e414]:
+        - generic [ref=e415]:
+          - heading "Williams Companies" [level=3] [ref=e416]
+          - generic [ref=e417]:
+            - generic [ref=e418]: QA Automation Architect (QA Consultant on contract)
+            - generic [ref=e419]: Tulsa, OK (Remote)
+            - generic [ref=e420]: 12/2025 – Present
+        - button "Choose work description" [ref=e422] [cursor=pointer]:
+          - text: Choose work description
+          - generic [aria-hidden] [ref=e423]: ▾
+    - region "Experience at Southern Company" [ref=e424]:
+      - generic [ref=e425]:
+        - generic [ref=e426]:
+          - heading "Southern Company" [level=3] [ref=e427]
+          - generic [ref=e428]:
+            - generic [ref=e429]: Senior QA Automation Analyst
+            - generic [ref=e430]: Atlanta, GA (Remote)
+            - generic [ref=e431]: 07/2024 – 11/2025
+        - button "Choose work description" [ref=e433] [cursor=pointer]:
+          - text: Choose work description
+          - generic [aria-hidden] [ref=e434]: ▾
+    - region "Experience at Lockheed Martin" [ref=e435]:
+      - generic [ref=e436]:
+        - generic [ref=e437]:
+          - heading "Lockheed Martin" [level=3] [ref=e438]
+          - generic [ref=e439]:
+            - generic [ref=e440]: Senior QA Automation Engineer
+            - generic [ref=e441]: Fort Worth, TX (Remote)
+            - generic [ref=e442]: 07/2023 – 06/2024
+        - button "Choose work description" [ref=e444] [cursor=pointer]:
+          - text: Choose work description
+          - generic [aria-hidden] [ref=e445]: ▾
+    - region "Experience at Fiserv" [ref=e446]:
+      - generic [ref=e447]:
+        - generic [ref=e448]:
+          - heading "Fiserv" [level=3] [ref=e449]
+          - generic [ref=e450]:
+            - generic [ref=e451]: Senior QA Automation Engineer
+            - generic [ref=e452]: Coral Springs, FL
+            - generic [ref=e453]: 02/2020 – 07/2023
+        - button "Choose work description" [ref=e455] [cursor=pointer]:
+          - text: Choose work description
+          - generic [aria-hidden] [ref=e456]: ▾
+    - region "Experience at Royal Caribbean Ltd." [ref=e457]:
+      - generic [ref=e458]:
+        - generic [ref=e459]:
+          - heading "Royal Caribbean Ltd." [level=3] [ref=e460]
+          - generic [ref=e461]:
+            - generic [ref=e462]: QA Automation System Engineer
+            - generic [ref=e463]: Miami, FL
+            - generic [ref=e464]: 09/2017 – 02/2020
+        - button "Choose work description" [ref=e466] [cursor=pointer]:
+          - text: Choose work description
+          - generic [aria-hidden] [ref=e467]: ▾
+    - region "Experience at Canfield Scientific" [ref=e468]:
+      - generic [ref=e469]:
+        - generic [ref=e470]:
+          - heading "Canfield Scientific" [level=3] [ref=e471]
+          - generic [ref=e472]:
+            - generic [ref=e473]: QA System Engineer
+            - generic [ref=e474]: Parsippany, NJ
+            - generic [ref=e475]: 06/2015 – 06/2017
+        - button "Choose work description" [ref=e477] [cursor=pointer]:
+          - text: Choose work description
+          - generic [aria-hidden] [ref=e478]: ▾
+    - region "Experience at Zodiac Interactive" [ref=e479]:
+      - generic [ref=e480]:
+        - generic [ref=e481]:
+          - heading "Zodiac Interactive" [level=3] [ref=e482]
+          - generic [ref=e483]:
+            - generic [ref=e484]: QA Engineer
+            - generic [ref=e485]: Hicksville, NY
+            - generic [ref=e486]: 12/2011 – 06/2015
+        - button "Choose work description" [ref=e488] [cursor=pointer]:
+          - text: Choose work description
+          - generic [aria-hidden] [ref=e489]: ▾
+  - region "Education" [ref=e490]:
+    - heading "Education" [level=2] [ref=e491]
+    - list [ref=e492]:
+      - listitem [ref=e493]: B.S. Computer Science — University of the People (In Progress)
+      - listitem [ref=e494]: B.S. in Business Administration, Data Science — Belarusian State Economic University
+  - region "Certifications" [ref=e495]:
+    - heading "Certifications" [level=2] [ref=e496]
+    - list [ref=e497]:
+      - listitem [ref=e498]:
+        - text: "Tricentis Tosca:"
+        - button "AS1" [ref=e499] [cursor=pointer]
+        - text: ","
+        - button "AS2" [ref=e500] [cursor=pointer]
+        - text: ","
+        - button "TDS1" [ref=e501] [cursor=pointer]
+        - text: ","
+        - button "TDS2" [ref=e502] [cursor=pointer]
+        - text: ","
+        - button "qTest" [ref=e503] [cursor=pointer]
+      - listitem [ref=e504]:
+        - text: "ASTQB:"
+        - button "CTFL" [ref=e505] [cursor=pointer]
+  - region "Automation Projects Examples" [ref=e506]:
+    - heading "My QA Automation Demo Projects" [level=2] [ref=e507]
+    - list [ref=e508]:
+      - listitem [ref=e509]:
+        - text: "My GitHub Portfolio Project (this website codebase):"
+        - link "JavaScript + React + Vite" [ref=e510] [cursor=pointer]:
+          - /url: "#/portfolio-github"
+      - listitem [ref=e511]:
+        - text: "WebUI and Picture Validation QA Automation Project:"
+        - link "Java + Playwright + OpenCV + JUnit" [ref=e512] [cursor=pointer]:
+          - /url: "#/java-playwright"
+      - listitem [ref=e513]:
+        - text: "Mobile Web App QA Automation Project:"
+        - link "C# + Selenium + Appium + NUnit" [ref=e514] [cursor=pointer]:
+          - /url: "#/csharp-mobile"
+      - listitem [ref=e515]:
+        - text: "Mobile Hybrid App QA Automation Project:"
+        - link "Java + Selenium + Appium + Charles Proxy + TestNG" [ref=e516] [cursor=pointer]:
+          - /url: "#/java-mobile"
+      - listitem [ref=e517]:
+        - text: "API QA Automation Project:"
+        - link "JMeter + Jenkins CI/CD" [ref=e518] [cursor=pointer]:
+          - /url: "#/jmeter-jenkins"
+      - listitem [ref=e519]:
+        - text: "WebUI Cypress QA Automation Project:"
+        - link "Cypress + TypeScript + Allure + GitHub Actions" [ref=e520] [cursor=pointer]:
+          - /url: "#/cypress-typescript-cicd"
+  - generic [ref=e521]: © 2026 Alex Boschuk

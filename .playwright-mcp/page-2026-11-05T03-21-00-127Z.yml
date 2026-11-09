@@ -1,0 +1,60 @@
+- main [ref=e475]:
+  - button "⌂ Home" [ref=e476] [cursor=pointer]
+  - region "Java Mobile Automation Project" [ref=e477]:
+    - heading "Java + Selenium + Appium + Charles Proxy + TestNG Automation Project" [level=1] [ref=e478]
+    - paragraph [ref=e479]: Android emulator bootstrap • Mobile app testing • Proxy-based traffic validation
+  - region "Project Description" [ref=e480]:
+    - heading "Project Description" [level=2] [ref=e481]
+    - paragraph [ref=e482]: This project demonstrates a Java-based mobile automation framework for Android testing with Appium, Selenium WebDriver, TestNG, and Charles Proxy integration. It automates Royal Caribbean mobile app validation, including guest flows and backend request verification through captured proxy traffic.
+  - region "Demo Links" [ref=e483]:
+    - heading "Demo Links" [level=2] [ref=e484]
+    - list [ref=e485]:
+      - listitem [ref=e486]:
+        - text: "Test execution demo:"
+        - link "YouTube video" [ref=e487] [cursor=pointer]:
+          - /url: https://youtu.be/OImSZfvOeYk
+      - listitem [ref=e488]:
+        - text: "TestNG report analysis:"
+        - link "YouTube video" [ref=e489] [cursor=pointer]:
+          - /url: https://youtu.be/-Y6T5DNOoWA
+      - listitem [ref=e490]:
+        - text: "PowerPoint presentation:"
+        - link "RCCL-Mobile-Test.pptx" [ref=e491] [cursor=pointer]:
+          - /url: /assets/RCCL-Mobile-Test-CY1r6d87.pptx
+      - listitem [ref=e492]:
+        - text: "Source code:"
+        - link "GitHub repository" [ref=e493] [cursor=pointer]:
+          - /url: https://github.com/alexbashchuk/Java-TestNG-Selenium-Appium-ProxyServer
+  - region "Tech Stack" [ref=e494]:
+    - heading "Tech Stack" [level=2] [ref=e495]
+    - generic "Tech stack chips" [ref=e496]:
+      - generic [ref=e497]: Java 1.8
+      - generic [ref=e498]: Appium for Java
+      - generic [ref=e499]: Selenium WebDriver
+      - generic [ref=e500]: TestNG
+      - generic [ref=e501]: Maven for dependencies and build management
+      - generic [ref=e502]: Android Emulator (AVD)
+      - generic [ref=e503]: Royal Caribbean Mobile App.
+      - generic [ref=e504]: ADB / Appium server bootstrap utilities
+      - generic [ref=e505]: Charles Proxy for network inspection
+      - generic [ref=e506]: Java Swing + AWT for custom GUI Interface
+  - region "Framework Flow" [ref=e507]:
+    - heading "Framework Flow" [level=2] [ref=e508]
+    - list [ref=e509]:
+      - listitem [ref=e510]: AVD emulator cleanup
+      - listitem [ref=e511]: Charles Proxy start
+      - listitem [ref=e512]: AVD Emulator start
+      - listitem [ref=e513]: Appium server start
+      - listitem [ref=e514]: Test execution and validation through Charles Proxy log parsing
+      - listitem [ref=e515]: Cleanup after test execution (AVD and Appium shutdown)
+      - listitem [ref=e516]: TestNG report creation
+  - region "Notes" [ref=e517]:
+    - heading "Notes" [level=2] [ref=e518]
+    - list [ref=e519]:
+      - listitem [ref=e520]:
+        - text: The framework is built for
+        - strong [ref=e521]: Cruise Guest Experience
+        - text: mobile validation.
+      - listitem [ref=e522]: "The environment bootstrap is a major part of the project: emulator startup, Appium startup, Charles Proxy connection, port resolution, ADB readiness, and cleanup are handled in code."
+      - listitem [ref=e523]: The framework is prepared for extension to additional mobile flows and real device execution.
+  - generic [ref=e524]: © 2026 Alex Bachuk

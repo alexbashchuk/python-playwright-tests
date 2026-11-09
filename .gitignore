@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# Test results
+test-results/
+playwright-report/
+allure-results/
+allure-report/
+htmlcov/
+.coverage
+
+# Secrets and saved browser sessions
+.env
+.env.*
+!.env.example
+playwright/.auth/

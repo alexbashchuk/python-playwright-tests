@@ -1,0 +1,129 @@
+- main [ref=f2e267]:
+  - button "⌂ Home" [ref=f2e268] [cursor=pointer]
+  - region "C# Mobile Automation Project" [ref=f2e269]:
+    - heading "C# + Selenium + Appium + NUnit Automation Project" [level=1] [ref=f2e270]
+    - paragraph [ref=f2e271]: Android emulator bootstrap • Mobile Chrome web testing • Portfolio UI validation
+  - region "Project Description" [ref=f2e272]:
+    - heading "Project Description" [level=2] [ref=f2e273]
+    - paragraph [ref=f2e274]:
+      - text: This project demonstrates a C# mobile web automation framework that starts an Android emulator, launches an Appium server, opens Chrome on the emulator, and validates functionality on my portfolio website. The current tests focus on experience-card work description behavior, including menu actions such as
+      - strong [ref=f2e275]: Short Details
+      - text: ","
+      - strong [ref=f2e276]: Long Story
+      - text: ", and the"
+      - strong [ref=f2e277]: X
+      - text: close control.
+  - region "Demo Links" [ref=f2e278]:
+    - heading "Demo Links" [level=2] [ref=f2e279]
+    - list [ref=f2e280]:
+      - listitem [ref=f2e281]:
+        - text: "Test execution demo:"
+        - link "YouTube video" [ref=f2e282] [cursor=pointer]:
+          - /url: https://youtu.be/WYbm4WLOnes
+      - listitem [ref=f2e283]:
+        - text: "Source code:"
+        - link "GitHub repository" [ref=f2e284] [cursor=pointer]:
+          - /url: https://github.com/alexbashchuk/CSharp_Selenium_Appium_NUnit
+  - region "Tech Stack" [ref=f2e285]:
+    - heading "Tech Stack" [level=2] [ref=f2e286]
+    - generic "Tech stack chips" [ref=f2e287]:
+      - generic [ref=f2e288]: C# .NET 8
+      - generic [ref=f2e289]: Appium for C#
+      - generic [ref=f2e290]: Selenium WebDriver
+      - generic [ref=f2e291]: NUnit
+      - generic [ref=f2e292]: Android Emulator (AVD)
+      - generic [ref=f2e293]: Chrome mobile web testing
+      - generic [ref=f2e294]: ADB / Appium server bootstrap utilities
+      - generic [ref=f2e295]: Windows .bat / PowerShell test run helpers
+      - generic [ref=f2e296]: Visual Studio + GitHub
+  - region "Project Structure" [ref=f2e297]:
+    - heading "Project Structure" [level=2] [ref=f2e298]
+    - generic [ref=f2e299]: CSharp_Selenium_Appium_NUnit ├─ Drivers │ └─ chromedriver.exe ├─ Infrastructure │ ├─ PreChecks │ │ ├─ AndroidChecks.cs │ │ ├─ AppiumChecks.cs │ │ ├─ Cli.cs │ │ ├─ EmulatorChecks.cs │ │ └─ PortChecks.cs │ ├─ Tests │ │ ├─ BaseMobileTest.cs │ │ ├─ ButtonsFunctionalityCheckTests.cs │ │ ├─ GlobalSetup.cs │ │ └─ POM_LandingPage.cs │ └─ Utils │ ├─ AVDStart.cs │ ├─ AppiumServerStart.cs │ ├─ EnvironmentBootstrap.cs │ └─ ProcessCleanupOnce.cs ├─ BAT_AndroidEmulatorStart.bat ├─ BAT_AppiumServerRunWithAllowances.bat ├─ TEST_RUN.bat ├─ Maximum dotnet test diagnostics.bat ├─ nunit.runsettings └─ CSharp_Appium.csproj
+  - region "C# Project Files and Classes" [ref=f2e300]:
+    - heading "C# Project Files and Classes" [level=2] [ref=f2e301]
+    - generic [ref=f2e302]:
+      - heading "Infrastructure.PreChecks" [level=3] [ref=f2e303]
+      - list [ref=f2e304]:
+        - listitem [ref=f2e305]:
+          - strong [ref=f2e306]: Cli.cs
+          - text: — Reusable command runner for external tools like adb, emulator, appium, and shell commands. Captures stdout/stderr, supports timeout handling, and kills hung processes safely.
+        - listitem [ref=f2e307]:
+          - strong [ref=f2e308]: AndroidChecks.cs
+          - text: — Android SDK / adb related validation helpers used before startup so the test environment fails early if required Android tooling is missing or not reachable.
+        - listitem [ref=f2e309]:
+          - strong [ref=f2e310]: AppiumChecks.cs
+          - text: — Pre-run validation for Appium availability and related prerequisites so the framework can confirm the Appium command chain is usable before trying to launch sessions.
+        - listitem [ref=f2e311]:
+          - strong [ref=f2e312]: EmulatorChecks.cs
+          - text: — Checks whether the requested AVD exists by querying available emulator profiles and throws a clear error if the configured emulator is missing.
+        - listitem [ref=f2e313]:
+          - strong [ref=f2e314]: PortChecks.cs
+          - text: — Resolves the requested Appium port or falls back to a free localhost port when the preferred one is already occupied.
+    - generic [ref=f2e315]:
+      - heading "Infrastructure.Utils" [level=3] [ref=f2e316]
+      - list [ref=f2e317]:
+        - listitem [ref=f2e318]:
+          - strong [ref=f2e319]: AVDStart.cs
+          - text: — Starts the Android emulator, waits until adb reports exactly one online emulator, verifies Android boot completion, and attempts device wake/unlock before tests begin.
+        - listitem [ref=f2e320]:
+          - strong [ref=f2e321]: AppiumServerStart.cs
+          - text: — Starts the Appium server process, monitors startup output, waits until the server is responsive, and preserves recent log lines for easier diagnostics if startup fails.
+        - listitem [ref=f2e322]:
+          - strong [ref=f2e323]: EnvironmentBootstrap.cs
+          - text: — Main orchestration layer that performs environment validation, starts the emulator, starts Appium, and returns the final runtime details needed by the tests.
+        - listitem [ref=f2e324]:
+          - strong [ref=f2e325]: ProcessCleanupOnce.cs
+          - text: — One-time global cleanup utility that kills leftover emulator and Appium processes before the run starts, while using a mutex guard to avoid disrupting parallel environments.
+    - generic [ref=f2e326]:
+      - heading "Infrastructure.Tests" [level=3] [ref=f2e327]
+      - list [ref=f2e328]:
+        - listitem [ref=f2e329]:
+          - strong [ref=f2e330]: GlobalSetup.cs
+          - text: — NUnit [SetUpFixture] that runs once per suite, performs global cleanup, bootstraps the emulator and Appium server, and stores shared runtime values like Appium port and emulator serial.
+        - listitem [ref=f2e331]:
+          - strong [ref=f2e332]: BaseMobileTest.cs
+          - text: — Abstract base test that creates the AndroidDriver session with Chrome mobile web capabilities, binds the driver to the bootstrapped emulator/Appium server, and opens the portfolio site before each test.
+        - listitem [ref=f2e333]:
+          - strong [ref=f2e334]: POM_LandingPage.cs
+          - text: — Page Object Model for the portfolio landing page. Handles mobile scrolling/swiping, locates company experience blocks, opens work description menus, and validates Short Details / Long Story selection and the X close control.
+        - listitem [ref=f2e335]:
+          - strong [ref=f2e336]: ButtonsFunctionalityCheckTests.cs
+          - text: — Parameterized NUnit test suite that validates access to the portfolio site and checks work-description button behavior across multiple company experience cards.
+    - generic [ref=f2e337]:
+      - heading "Repo Root / Support Files" [level=3] [ref=f2e338]
+      - list [ref=f2e339]:
+        - listitem [ref=f2e340]:
+          - strong [ref=f2e341]: Drivers/chromedriver.exe
+          - text: — Local ChromeDriver binary used by Appium for automating Chrome on the Android emulator.
+        - listitem [ref=f2e342]:
+          - strong [ref=f2e343]: BAT_AndroidEmulatorStart.bat / PS_AndroidEmulatorStart.ps1
+          - text: — Helper scripts for starting the Android emulator outside or alongside the automated test workflow.
+        - listitem [ref=f2e344]:
+          - strong [ref=f2e345]: BAT_AppiumServerRunWithAllowances.bat
+          - text: — Convenience script for launching Appium with required allowances/settings on Windows.
+        - listitem [ref=f2e346]:
+          - strong [ref=f2e347]: TEST_RUN.bat / Maximum dotnet test diagnostics.bat
+          - text: — Batch helpers for executing the NUnit suite and collecting more verbose diagnostics during demo or troubleshooting runs.
+        - listitem [ref=f2e348]:
+          - strong [ref=f2e349]: nunit.runsettings
+          - text: — Run settings file used to control NUnit / test execution behavior for the solution.
+  - region "Framework Flow" [ref=f2e350]:
+    - heading "Framework Flow" [level=2] [ref=f2e351]
+    - list [ref=f2e352]:
+      - listitem [ref=f2e353]: Global one-time cleanup removes ghost Appium and emulator processes.
+      - listitem [ref=f2e354]: Environment checks validate AVD, Appium, Android tooling, and free port usage.
+      - listitem [ref=f2e355]: Framework starts the Android emulator and waits for full device boot.
+      - listitem [ref=f2e356]: Appium server starts and becomes reachable on the resolved localhost port.
+      - listitem [ref=f2e357]: AndroidDriver opens Chrome on the emulator and navigates to my portfolio site.
+      - listitem [ref=f2e358]: Parameterized NUnit tests validate work-description controls across experience cards.
+  - region "Notes" [ref=f2e359]:
+    - heading "Notes" [level=2] [ref=f2e360]
+    - list [ref=f2e361]:
+      - listitem [ref=f2e362]:
+        - text: The framework is built for Android
+        - strong [ref=f2e363]: mobile web
+        - text: automation rather than native-app automation in its current form.
+      - listitem [ref=f2e364]: "The environment bootstrap is a major part of the project: emulator startup, Appium startup, port resolution, adb readiness, and cleanup are all handled in code."
+      - listitem [ref=f2e365]: The Page Object uses scrolling/swiping support because some portfolio elements are far down the mobile page and need to be brought into view before interaction.
+      - listitem [ref=f2e366]: This project is designed as a demo-friendly automation run that shows realistic mobile infrastructure setup, not just isolated test methods.
+  - generic [ref=f2e367]: © 2026 Alex Bachuk
